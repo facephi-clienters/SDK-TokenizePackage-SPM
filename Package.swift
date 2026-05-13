@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.7.0")),
+        .package(url: "git@github.com:facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.8.0")),
         .package(url: "git@github.com:facephi-clienters/FPBTokenizer-SPM.git", .upToNextMinor(from: "4.0.4"))
     ],
     targets: [
@@ -31,7 +31,7 @@ let package = Package(
                 "FPBTokenizer-SPM"
             ]),
         .binaryTarget(name: "tokenizeComponent",
-        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKTokenizeComponent/2.7.0/tokenizeComponent.zip",
-        checksum: "899aabc89b91f9eecf7c83c51b054d767f3eff379cb9a9e61ca947bbcd3f9afa")
+        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKTokenizeComponent/2.8.0/tokenizeComponent.zip",
+        checksum: "bbcb8caef52f4a534c36394111d4575eead166b2ab25e2e08895bec14ddeda96")
     ]
 )
