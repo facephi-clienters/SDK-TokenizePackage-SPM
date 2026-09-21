@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "SDK-TokenizePackage-SPM",
     platforms: [
-        .iOS(.v9),
+        .iOS(.v12),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-        .package(url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.11.0")),
+        .package(url: "https://github.com/facephi-clienters/SDK-CorePackage-SPM.git", .exactItem("2.12.0")),
         .package(url: "https://github.com/facephi-clienters/FPBTokenizer-SPM.git", .upToNextMinor(from: "4.0.4"))
     ],
     targets: [
@@ -31,7 +31,7 @@ let package = Package(
                 "FPBTokenizer-SPM"
             ]),
         .binaryTarget(name: "tokenizeComponent",
-        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKTokenizeComponent/2.11.0/tokenizeComponent.zip",
-        checksum: "9af8754b23b2a8adf9649ad4745405e2a43739ee5ec0f3ea036c5b59f69f95f3")
+        url: "https://facephicorp.jfrog.io/artifactory/spm-pro-fphi/SDK/FPHISDKTokenizeComponent/2.12.0/tokenizeComponent.zip",
+        checksum: "58bb2c54045895d2c8b52de73d02092eb59d01d82b2d3d4b081d394a1f5c37d4")
     ]
 )
